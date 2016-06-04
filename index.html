@@ -4,19 +4,95 @@
   <meta charset="UTF-8">
   <title>Employee Data Mangement</title>
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
 
   <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+        integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+          integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+          crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js" type="text/javascript"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-12 col-sm-12">
+      <div class="jumbotron">
+        <h1>Employee Data Management</h1>
+        <p>A Comprehensive Blah blah blah...</p>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Current Employees</h3>
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>Employee Name</th>
+                <th>Role</th>
+                <th>Start Date</th>
+                <th>Months Worked</th>
+                <th>Monthly Rate ($)</th>
+                <th>Total Bill ($)</th>
+              </tr>
+              </thead>
+              <tbody id="emp-rows">
+              <tr>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>2</th>
+                <th>2</th>
+                <th>2</th>
+                <th>2</th>
+                <th>2</th>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Add Employee</h3>
+        </div>
+        <div class="panel-body">
+          <form>
+            <fieldset class="form-group">
+              <label for="emp-name-input">Employee Name</label>
+              <input type="text" class="form-control" id="emp-name-input" placeholder="">
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="emp-role-input">Role</label>
+              <input type="text" class="form-control" id="emp-role-input" placeholder="">
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="emp-start-date-input">Start Date (DD/MM/YY - ex: 01/01/20)</label>
+              <input type="text" class="form-control" id="emp-start-date-input" placeholder="DD/MM/YY">
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="emp-monthly-rate-input">Monthly Rate</label>
+              <input type="text" class="form-control" id="emp-monthly-rate-input" placeholder="">
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
